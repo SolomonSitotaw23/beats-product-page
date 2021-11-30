@@ -2,26 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import bigImg from "../images/home.png";
 import { FaCartPlus } from "react-icons/fa";
+import Fade from "react-reveal/Fade";
 
 const Heading = () => {
   return (
     <Wrap>
-      <BigImg>
-        <img src={bigImg} alt="" />
-      </BigImg>
-      <CTA>
-        <h1>BEATS 3</h1>
-        <h2>Overview</h2>
-        {FaCartPlus}
-        <p>
-          Enjoy award-winning Beats sound with wireless listening freedom and a
-          sleek, streamlined design with comfortable padded earphones,
-          delivering first-rate playback.
-        </p>
-        <CtaButton>
-          <FaCartPlus /> Add To cart <b>$200</b>
-        </CtaButton>
-      </CTA>
+      <Fade top>
+        <BigImg>
+          <img src={bigImg} alt="" />
+        </BigImg>
+      </Fade>
+      <Fade right>
+        <CTA>
+          <h1>BEATS 3</h1>
+          <h2>Overview</h2>
+          {FaCartPlus}
+          <p>
+            Enjoy award-winning Beats sound with wireless listening freedom and
+            a sleek, streamlined design with comfortable padded earphones,
+            delivering first-rate playback.
+          </p>
+          <CtaButton>
+            <FaCartPlus /> Add To cart <b>$200</b>
+          </CtaButton>
+        </CTA>
+      </Fade>
     </Wrap>
   );
 };
@@ -35,12 +40,12 @@ const Wrap = styled.div`
   align-items: center;
 `;
 const BigImg = styled.div`
-  padding: 0 10rem;
+  padding: 10rem;
   width: 50%;
   img {
     width: 350px;
     height: 809px;
-    margin-top: -10rem;
+    margin: -10rem 0 0 5rem;
   }
 `;
 const CTA = styled.div`
@@ -51,8 +56,8 @@ const CTA = styled.div`
     font-size: 71px;
     line-height: 136px;
     letter-spacing: 0.21em;
-
-    color: #e2e2e2;
+    color: #696767;
+    padding: 0;
   }
   p {
     font-size: 18px;

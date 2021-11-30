@@ -36,7 +36,7 @@ const Logo = styled.div`
     width: 45px;
     height: 45px;
     left: 303px;
-    /* margin-top: 26px; */
+    z-index: 3;
   }
 `;
 const Links = styled.div`
