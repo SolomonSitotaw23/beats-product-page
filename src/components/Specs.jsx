@@ -14,7 +14,7 @@ import Fade from "react-reveal/Fade";
 
 const Specs = () => {
   return (
-    <Wrap>
+    <Wrap id="Specs">
       <Icons>
         <BsApple size={40} className="largeCta" />
         <BsSpotify size={40} className="largeCta" />
@@ -22,7 +22,7 @@ const Specs = () => {
         <AiFillAmazonCircle size={40} className="largeCta" />
       </Icons>
       <Title>
-        <h1>Specs</h1>
+        <h1 className="bigTitle">Specs</h1>
       </Title>
       <Main>
         <Fade left>
@@ -96,12 +96,6 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  h1 {
-    font-size: 72px;
-    line-height: 108px;
-    color: #696767;
-    letter-spacing: 0.21em;
-  }
 `;
 const Main = styled.div`
   display: flex;

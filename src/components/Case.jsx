@@ -14,7 +14,7 @@ const Case = () => {
       </Fade>
       <Fade right>
         <Text>
-          <h1>Case</h1>
+          <h1 className="bigTitle">Case</h1>
           <p>
             With a comfortable and adaptable case so that you can store it
             whenever you want, and keep your durability forever.
@@ -45,20 +45,14 @@ const CaseImg = styled.div`
   img {
     width: 250;
     height: 339.92px;
-    padding-left: 20rem;
+    padding: 0 10rem;
   }
 `;
 
 const Text = styled.div`
   margin: 5rem;
-  padding: 10rem;
-  h1 {
-    font-size: 72px;
-    line-height: 108px;
-    color: #696767;
-    letter-spacing: 0.21em;
-    margin-bottom: 2rem;
-  }
+  padding-right: 10rem;
+
   p {
     font-size: 18px;
     line-height: 30px;

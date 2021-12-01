@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 const Heading = () => {
   return (
-    <Wrap>
+    <Wrap id="Home">
       <Fade top>
         <BigImg>
           <img src={bigImg} alt="" />
@@ -14,7 +14,7 @@ const Heading = () => {
       </Fade>
       <Fade right>
         <CTA>
-          <h1>BEATS 3</h1>
+          <h1 className="bigTitle">BEATS 3</h1>
           <h2>Overview</h2>
           {FaCartPlus}
           <p>
@@ -51,14 +51,6 @@ const BigImg = styled.div`
 const CTA = styled.div`
   padding: 0 10rem;
   margin-top: -8rem;
-  h1 {
-    font-weight: 800;
-    font-size: 71px;
-    line-height: 136px;
-    letter-spacing: 0.21em;
-    color: #696767;
-    padding: 0;
-  }
   p {
     font-size: 18px;
     line-height: 30px;

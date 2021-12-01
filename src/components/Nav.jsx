@@ -10,8 +10,14 @@ const Nav = () => {
       </Logo>
       <Links>
         <ul>
-          <li>Home</li>
-          <li>Specs</li>
+          <li>
+            {" "}
+            <a href="#Home">Home</a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#Specs">Specs</a>{" "}
+          </li>
           <li>Case</li>
           <li>Products</li>
         </ul>

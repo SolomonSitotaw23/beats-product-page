@@ -21,3 +21,10 @@
 body {
   font-family: var(--font-family);
 }
+.bigTitle {
+  font-size: 72px;
+  line-height: 108px;
+  color: #696767;
+  letter-spacing: 0.21em;
+  margin-bottom: 2rem;
+}
