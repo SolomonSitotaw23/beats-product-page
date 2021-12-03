@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 const Case = () => {
   return (
-    <Wrap>
+    <Wrap id="Case">
       <Fade left>
         <CaseImg>
           <img src={caseImg} alt="" />

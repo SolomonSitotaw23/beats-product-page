@@ -28,13 +28,15 @@ const Styles = () => {
         </CTA>
       </CTAWrap>
       <Choose>
-        <h1 className="bigTitle">Choose Your Style</h1>
+        <h1 className="bigTitle" id="Product">
+          Choose Your Style
+        </h1>
         <Items>
-          <Item image={product1} />
-          <Item image={product2} />
-          <Item image={product3} />
-          <Item image={product4} />
-          <Item image={product5} />
+          <Item image={product1} title={"Black"} price={"$249"} />
+          <Item image={product2} title={"Black"} price={"$249"} />
+          <Item image={product3} title={"Black"} price={"$249"} />
+          <Item image={product4} title={"Black"} price={"$249"} />
+          <Item image={product5} title={"Black"} price={"$249"} />
         </Items>
       </Choose>
     </Wrap>
@@ -52,10 +54,8 @@ const Wrap = styled.div`
 const CTAWrap = styled.div`
   height: 50vh;
   width: 100%;
-
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 `;
 const CTA = styled.div`
   width: 70%;
@@ -116,6 +116,9 @@ const Choose = styled.div`
   align-items: center;
   width: 100%;
   height: 110vh;
+  h1 {
+    margin: 0;
+  }
 `;
 const Items = styled.div`
   display: grid;

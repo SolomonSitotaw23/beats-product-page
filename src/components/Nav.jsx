@@ -18,8 +18,13 @@ const Nav = () => {
             {" "}
             <a href="#Specs">Specs</a>{" "}
           </li>
-          <li>Case</li>
-          <li>Products</li>
+          <li>
+            {" "}
+            <a href="#Case">Case</a>{" "}
+          </li>
+          <li>
+            <a href="#Product">Product</a>
+          </li>
         </ul>
       </Links>
     </Wrap>
@@ -58,6 +63,10 @@ const Links = styled.div`
       &:hover {
         text-decoration: underline;
       }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
     }
   }
 `;
