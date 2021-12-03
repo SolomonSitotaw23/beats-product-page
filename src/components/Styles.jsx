@@ -8,23 +8,29 @@ import product2 from "../images/product2.png";
 import product3 from "../images/product3.png";
 import product4 from "../images/product4.png";
 import product5 from "../images/product5.png";
+import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 const Styles = () => {
   return (
     <Wrap>
       <CTAWrap>
         <CTA>
-          <Text>
-            <h1>Immerse yourself in your music</h1>
-            <p> Get it now, up to 50% off.</p>
-            <ShopButton>
-              <BsFillBagCheckFill />
-              <p>Shop Now</p>
-            </ShopButton>
-          </Text>
-          <Image>
-            <img src={bigImage} alt="" />
-          </Image>
+          <Fade left>
+            <Text>
+              <h1>Immerse yourself in your music</h1>
+              <p> Get it now, up to 50% off.</p>
+              <ShopButton>
+                <BsFillBagCheckFill />
+                <p>Shop Now</p>
+              </ShopButton>
+            </Text>
+          </Fade>
+          <Fade right>
+            <Image>
+              <img src={bigImage} alt="" />
+            </Image>
+          </Fade>
         </CTA>
       </CTAWrap>
       <Choose>
@@ -32,11 +38,13 @@ const Styles = () => {
           Choose Your Style
         </h1>
         <Items>
-          <Item image={product1} title={"Black"} price={"$249"} />
-          <Item image={product2} title={"Black"} price={"$249"} />
-          <Item image={product3} title={"Black"} price={"$249"} />
-          <Item image={product4} title={"Black"} price={"$249"} />
-          <Item image={product5} title={"Black"} price={"$249"} />
+          <Zoom>
+            <Item image={product1} title={"Black"} price={"$249"} />
+            <Item image={product2} title={"Black"} price={"$249"} />
+            <Item image={product3} title={"Black"} price={"$249"} />
+            <Item image={product4} title={"Black"} price={"$249"} />
+            <Item image={product5} title={"Black"} price={"$249"} />
+          </Zoom>
         </Items>
       </Choose>
     </Wrap>
@@ -68,7 +76,7 @@ const CTA = styled.div`
   justify-content: center;
 `;
 const Text = styled.div`
-  width: 50%;
+  width: 80%;
   h1 {
     font-size: 34px;
     line-height: 148.5%;

@@ -28,3 +28,12 @@ body {
   letter-spacing: 0.21em;
   margin-bottom: 2rem;
 }
+.list ul {
+  list-style-type: none;
+}
+.list ul li {
+  padding: 5px 0;
+}
+.list ul li:hover:not(:first-child) {
+  text-decoration: underline;
+}
